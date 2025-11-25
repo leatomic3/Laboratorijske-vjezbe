@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zadatak 5 - Bootstrap forma</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <style>
+        body {
+            background-color: #f1f1f1;
+        }
+        .form-kutija {
+            margin-top: 50px;
+            padding: 30px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="form-kutija">
+        <h2>Kontakt Forma</h2>
+
+        <form>
+            <div class="form-group">
+                <label for="ime">Ime i prezime:</label>
+                <input type="text" class="form-control" id="ime" placeholder="Unesite ime i prezime">
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email adresa:</label>
+                <input type="email" class="form-control" id="email" placeholder="Unesite email">
+            </div>
+
+            <div class="form-group">
+                <label for="poruka">Poruka:</label>
+                <textarea class="form-control" id="poruka" rows="4" placeholder="Vaša poruka..."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-block">Pošalji</button>
+        </form>
+    </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
